@@ -22,6 +22,18 @@ body {
   background-color: #171F27;
 }
 
+.fix_items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+}
+
 header {
   width: 100%;
   background-color: #171F27;
@@ -36,7 +48,7 @@ header {
           align-items: center;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  position: fixed;
+  z-index: 99;
 }
 
 header form {
@@ -148,6 +160,7 @@ header .user .user-image {
   overflow: hidden;
   width: 42px;
   height: 42px;
+  border: 2px solid #0092ee;
 }
 
 header .user .user-image img {
@@ -173,5 +186,43 @@ header .user .arrow {
   margin-left: 50px;
   margin-right: 30px;
   color: #acacac;
+}
+
+.left-side {
+  width: 80px;
+  background-color: #1d2730;
+}
+
+.left-side nav ul li :hover {
+  background-color: #0092ee;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.left-side nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px;
+  -webkit-box-shadow: 0 0 10px rgba(23, 31, 39, 0.1);
+          box-shadow: 0 0 10px rgba(23, 31, 39, 0.1);
+  background-color: #25313b;
+  border-radius: 100px;
+  margin: 20px 10px;
+}
+
+.left-side nav ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.left-side nav ul li .active {
+  background-color: #0092ee;
 }
 /*# sourceMappingURL=styles.css.map */

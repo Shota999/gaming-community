@@ -123,10 +123,7 @@ header{
     nav{
         ul{
             li{
-                :hover{
-                    background-color: #0092ee;
-                    transition: .3s;
-                }
+                
                 a{
                     display: flex;
                     justify-content: center;
@@ -142,9 +139,25 @@ header{
                         width: 24px;
                         height: 24px;
                     }
+                    :hover{
+                        background-color: #0092ee;
+                        transition: .3s;
+                    }
                 }
                 .active{
                     background-color: #0092ee;
+                }
+                .add{
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    border: 1px dashed #4f6175;
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    overflow: hidden;
                 }
             }
         }

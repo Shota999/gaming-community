@@ -193,12 +193,6 @@ header .user .arrow {
   background-color: #1d2730;
 }
 
-.left-side nav ul li :hover {
-  background-color: #0092ee;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
 .left-side nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +216,32 @@ header .user .arrow {
   height: 24px;
 }
 
+.left-side nav ul li a:hover {
+  background-color: #0092ee;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .left-side nav ul li .active {
   background-color: #0092ee;
+}
+
+.left-side nav ul li .add {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px dashed #4f6175;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

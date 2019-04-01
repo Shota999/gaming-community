@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #171F27;
+}
+
+header {
+  width: 100%;
+  background-color: #171F27;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 -30px 100px black;
+          box-shadow: 0 -30px 100px black;
+}
+
+header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+header form .search {
+  background-color: #707070;
+}
+
+header form .search button {
+  background: transparent;
+  border: 0;
+}
+
+header form .search input {
+  background-color: transparent;
+  border: 0;
+}
+
+header form .search ::-webkit-input-placeholder {
+  color: #ABAEB1;
+}
+
+header form .search :-ms-input-placeholder {
+  color: #ABAEB1;
+}
+
+header form .search ::-ms-input-placeholder {
+  color: #ABAEB1;
+}
+
+header form .search ::placeholder {
+  color: #ABAEB1;
+}
+/*# sourceMappingURL=styles.css.map */

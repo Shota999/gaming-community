@@ -61,16 +61,30 @@
                 <li><a href="#"><img src="images/icons/shopping-cart.png" alt="shopping-cart"></a></li>
                 <li><a href="#" class="add"><img src="images/icons/add.png" alt="add"></a></li>
             </ul>
+            
         </nav>
+        <div class="bottom_menu">
+            <div class="information">
+                <div class="info"><img src="images/icons/information.png" alt="information"></div>
+                <div class="more"> <i class="fas fa-caret-left"></i>ჩვენს შესახებ</div>
+            </div>
+            <div><img src="images/icons/flag.png" alt="flag"></div>
+        </div>
     </div>
     </div>
     
 
-
-    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/vue.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".information").click(function() {
+                $(".more").css('display', 'flex');
+            });
+        });
+    </script>
+    
 </body>
 </html>

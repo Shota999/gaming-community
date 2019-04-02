@@ -244,4 +244,73 @@ header .user .arrow {
   cursor: pointer;
   overflow: hidden;
 }
+
+.left-side .bottom_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 190px;
+}
+
+.left-side .bottom_menu .information {
+  position: relative;
+}
+
+.left-side .bottom_menu .information .info {
+  margin-bottom: 15px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #25313b;
+  border-radius: 50%;
+}
+
+.left-side .bottom_menu .information .info img {
+  width: 16px;
+  height: 16px;
+}
+
+.left-side .bottom_menu .more {
+  width: 112px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background-color: #1d2730;
+  color: white;
+  font-size: 10px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-side .bottom_menu .more i {
+  color: #1d2730;
+  font-size: 20px;
+  position: relative;
+  top: 0px;
+  right: 21%;
+}
 /*# sourceMappingURL=styles.css.map */

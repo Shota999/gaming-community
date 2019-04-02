@@ -216,7 +216,7 @@ header .user .arrow {
   height: 24px;
 }
 
-.left-side nav ul li a:hover {
+.left-side nav ul li a :hover {
   background-color: #0092ee;
   -webkit-transition: .3s;
   transition: .3s;

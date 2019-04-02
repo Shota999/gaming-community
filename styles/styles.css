@@ -142,6 +142,109 @@ header .shop_notification .icon :hover {
   transition: .3s;
 }
 
+header .shop_notification .people {
+  position: relative;
+}
+
+header .shop_notification .people .more_people {
+  width: 321px;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #25313b;
+  position: absolute;
+  top: 77px;
+  left: 0;
+  cursor: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .shop_notification .people .more_people .team_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1d2730;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+header .shop_notification .people .more_people .team_part p {
+  color: white;
+  font-size: 12px;
+}
+
+header .shop_notification .people .more_people .team_part img {
+  padding: 0;
+  cursor: pointer;
+}
+
+header .shop_notification .people .more_people .team {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+  padding-left: 23px;
+}
+
+header .shop_notification .people .more_people .team .friend .friend_image {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  background-color: #1d2730;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .shop_notification .people .more_people .team .friend .friend_image img {
+  width: 16px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 99;
+  padding: 0;
+}
+
+header .shop_notification .people .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .shop_notification .active {
+  background-color: #25313b;
+}
+
 header .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +296,12 @@ header .user .arrow {
   background-color: #1d2730;
 }
 
+.left-side nav ul li :hover {
+  background-color: #0092ee;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .left-side nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,12 +325,6 @@ header .user .arrow {
   height: 24px;
 }
 
-.left-side nav ul li a :hover {
-  background-color: #0092ee;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
 .left-side nav ul li .active {
   background-color: #0092ee;
 }
@@ -243,6 +346,10 @@ header .user .arrow {
           align-items: center;
   cursor: pointer;
   overflow: hidden;
+}
+
+.left-side nav ul li .add :hover {
+  background-color: transparent;
 }
 
 .left-side .bottom_menu {
@@ -281,6 +388,7 @@ header .user .arrow {
           align-items: center;
   background-color: #25313b;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .left-side .bottom_menu .information .info img {

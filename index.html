@@ -32,8 +32,28 @@
                 <div class="notification icon">
                     <img src="images/icons/notification.png" alt="notification">
                 </div>
-                <div class="friends icon">
+                <div class="people icon">
                     <img src="images/icons/friends.png" alt="friends">
+
+                    <div class="more_people" id="app">
+                        <div class="team_part">
+                            <p>გუნდის წევრები</p>
+                            <img src="images/icons/repairing-service.png" alt="repairing-service">
+                        </div>
+                        <div class="team">
+                            <div class="team_friend friend">
+                                <div class="friend_image">
+                                    <img src="images/users/2-layers.png" alt="user">
+                                </div>
+                                <div class="friend_name">
+
+                                </div>
+                            </div>
+                            <div class="friend_chat">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="user">
@@ -66,7 +86,7 @@
         <div class="bottom_menu">
             <div class="information">
                 <div class="info"><img src="images/icons/information.png" alt="information"></div>
-                <div class="more"> <i class="fas fa-caret-left"></i>ჩვენს შესახებ</div>
+                <div class="more"><i class="fas fa-caret-left"></i>ჩვენს შესახებ</div>
             </div>
             <div><img src="images/icons/flag.png" alt="flag"></div>
         </div>
@@ -83,7 +103,28 @@
             $(".information").click(function() {
                 $(".more").css('display', 'flex');
             });
+            $(".people").click(function() {
+                $(".people").addClass('active');
+                $(".more_people").addClass('show');
+            });
         });
+
+        if ($('#app').length) {
+                            const app = new Vue({
+                                el: '#app',
+                                data: {
+                                    search: '',
+                                    items: [{
+                                            name: 'Max Reynold',
+                                            message: 'Lorem Ipsum is simply dummy text of the printing and type...',
+                                            date: '5m ago',
+                                            image: 'images/max.png',
+                                        },
+
+                                    ],
+                                }
+                            });
+                        }
     </script>
     
 </body>

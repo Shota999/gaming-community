@@ -81,6 +81,79 @@ header{
                 transition: .3s;
             }
         }
+        .people{
+            position: relative;
+
+            .more_people{
+                width: 321px;
+                height: 1000px;
+                display: flex;
+                background-color: #25313b;
+                position: absolute;
+                top: 77px;
+                left: 0;
+                cursor: auto;
+                flex-direction: column;
+                transition: .3s;
+
+                .team_part{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #1d2730;
+                    margin-top: 30px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+
+                    p{
+                        color: white;
+                        font-size: 12px;
+                    }
+                    img{
+                        padding: 0;
+                        cursor: pointer;
+                    }
+                }
+                .team{
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 20px;
+                    padding-left: 23px;
+
+                    .friend{
+                        .friend_image{
+                            border-radius: 50%;
+                            width: 56px;
+                            height: 56px;
+                            background-color: #1d2730;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img{
+                                width: 16px;
+                                height: 20px;
+                                object-fit: cover;
+                                z-index: 99;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .show{
+                display: flex;
+            }
+        }
+        .active{
+            background-color: #25313b;
+        }
     }
     .user{
         display: flex;
@@ -124,6 +197,10 @@ header{
         ul{
             li{
                 
+                :hover{
+                    background-color: #0092ee;
+                    transition: .3s;
+                }
                 a{
                     display: flex;
                     justify-content: center;
@@ -138,10 +215,6 @@ header{
                     img{
                         width: 24px;
                         height: 24px;
-                    }
-                    :hover{
-                        background-color: #0092ee;
-                        transition: .3s;
                     }
                 }
                 .active{
@@ -158,6 +231,10 @@ header{
                     align-items: center;
                     cursor: pointer;
                     overflow: hidden;
+
+                    :hover{
+                        background-color: transparent;
+                    }
                 }
             }
         }
@@ -180,6 +257,7 @@ header{
                 align-items: center;
                 background-color: #25313b;
                 border-radius: 50%;
+                cursor: pointer;
 
                     img{
                         width: 16px;

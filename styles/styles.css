@@ -22,6 +22,22 @@ body {
   background-color: #171F27;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #1d2730;
+}
+
+/* Handle on hover */
 .fix_items {
   width: 100%;
   display: -webkit-box;
@@ -55,9 +71,6 @@ header form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 header form .search {
@@ -148,7 +161,6 @@ header .shop_notification .people {
 
 header .shop_notification .people .more_people {
   width: 321px;
-  height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,8 +173,9 @@ header .shop_notification .people .more_people {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding-top: 30px;
 }
 
 header .shop_notification .people .more_people .team_part {
@@ -176,7 +189,6 @@ header .shop_notification .people .more_people .team_part {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #1d2730;
-  margin-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 13px;
@@ -186,6 +198,7 @@ header .shop_notification .people .more_people .team_part {
 header .shop_notification .people .more_people .team_part p {
   color: white;
   font-size: 12px;
+  font-family: "BPG Arial";
 }
 
 header .shop_notification .people .more_people .team_part img {
@@ -193,9 +206,8 @@ header .shop_notification .people .more_people .team_part img {
   cursor: pointer;
 }
 
-header .shop_notification .people .more_people .team {
+header .shop_notification .people .more_people .team_people {
   width: 100%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,9 +219,46 @@ header .shop_notification .people .more_people .team {
           align-items: center;
   padding-right: 20px;
   padding-left: 23px;
+  margin: 12px 0;
 }
 
-header .shop_notification .people .more_people .team .friend .friend_image {
+header .shop_notification .people .more_people .team_people .friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .shop_notification .people .more_people .team_people .friend .friends_level {
+  width: 18px;
+  height: 20px;
+  -webkit-box-shadow: 0 0 6px rgba(29, 39, 48, 0.41);
+          box-shadow: 0 0 6px rgba(29, 39, 48, 0.41);
+  background-color: #0092ee;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  color: white;
+  font-size: 11px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .team_people .friend .friend_image {
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -226,19 +275,127 @@ header .shop_notification .people .more_people .team .friend .friend_image {
           justify-content: center;
 }
 
-header .shop_notification .people .more_people .team .friend .friend_image img {
-  width: 16px;
-  height: 20px;
+header .shop_notification .people .more_people .team_people .friend .friend_image img {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 99;
   padding: 0;
 }
 
-header .shop_notification .people .show {
+header .shop_notification .people .more_people .team_people .friend .friend_name {
+  margin-left: 15px;
+}
+
+header .shop_notification .people .more_people .team_people .friend .friend_name h3 {
+  font-size: 13px;
+  color: #ffffff;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .team_people .friend .friend_name span {
+  display: block;
+  color: #acacac;
+  font-size: 10px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .team_people .friend .friend_name .online {
+  position: relative;
+  color: #42b72a;
+}
+
+header .shop_notification .people .more_people .team_people .friend_chat img {
+  padding: 0;
+  cursor: pointer;
+}
+
+header .shop_notification .people .more_people .friends {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .shop_notification .people .more_people .friends .friend_list {
+  overflow-y: auto;
+}
+
+header .shop_notification .people .more_people .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 15px 12px 20px;
+  background-color: #1d2730;
+}
+
+header .shop_notification .people .more_people .form form .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0;
+  padding: 8px 0px 8px 15px;
+}
+
+header .shop_notification .people .more_people .form form .search button {
+  background: transparent;
+  border: 0;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  outline: none;
+}
+
+header .shop_notification .people .more_people .form form .search button img {
+  padding: 0;
+}
+
+header .shop_notification .people .more_people .form form .search input {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .form form .search ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .form form .search :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .form form .search ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .form form .search ::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 9px;
+  font-family: "BPG Arial";
+}
+
+header .shop_notification .people .more_people .form .add {
+  cursor: pointer;
+}
+
+header .shop_notification .people .more_people .form .add img {
+  padding: 0;
 }
 
 header .shop_notification .active {
@@ -260,15 +417,41 @@ header .user {
 
 header .user .user-image {
   border-radius: 50%;
-  overflow: hidden;
   width: 42px;
   height: 42px;
   border: 2px solid #0092ee;
+  position: relative;
 }
 
 header .user .user-image img {
   width: 100%;
   height: 100%;
+}
+
+header .user .user-image .level {
+  width: 18px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 6px rgba(29, 39, 48, 0.41);
+          box-shadow: 0 0 6px rgba(29, 39, 48, 0.41);
+  background-color: #0092ee;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  z-index: 99;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  color: white;
+  font-size: 11px;
+  font-family: "BPG Arial";
 }
 
 header .user .user-name {
@@ -294,6 +477,7 @@ header .user .arrow {
 .left-side {
   width: 80px;
   background-color: #1d2730;
+  padding-bottom: 20px;
 }
 
 .left-side nav ul li :hover {

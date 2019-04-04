@@ -160,14 +160,14 @@ header .shop_notification .people {
 }
 
 header .shop_notification .people .more_people {
-  width: 321px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 386px;
   background-color: #25313b;
   position: absolute;
   top: 77px;
   left: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -321,6 +321,7 @@ header .shop_notification .people .more_people .friends {
 
 header .shop_notification .people .more_people .friends .friend_list {
   overflow-y: auto;
+  height: 500px;
 }
 
 header .shop_notification .people .more_people .form {
@@ -396,6 +397,12 @@ header .shop_notification .people .more_people .form .add {
 
 header .shop_notification .people .more_people .form .add img {
   padding: 0;
+}
+
+header .shop_notification .people .show {
+  left: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 header .shop_notification .active {
@@ -585,17 +592,21 @@ header .user .arrow {
   height: 30px;
   position: absolute;
   top: 0;
-  left: 60px;
+  left: -1000px;
   background-color: #1d2730;
   color: white;
   font-size: 10px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .left-side .bottom_menu .more i {
@@ -604,5 +615,217 @@ header .user .arrow {
   position: relative;
   top: 0px;
   right: 21%;
+}
+
+.left-side .bottom_menu .show {
+  left: 60px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.main_container {
+  width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  overflow-y: auto;
+  margin-top: 83px;
+  padding-top: 35px;
+  z-index: 1;
+}
+
+.main_container .tournaments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container .tournaments h3 {
+  color: #ffffff;
+  font-family: "BPG Arial";
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.main_container .tournaments .tournament {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .tournaments .tournament .middle {
+  margin: 0 20px;
+}
+
+.main_container .tournaments .tournament .container {
+  border-radius: 10px;
+  background-color: #1d2730;
+  padding: 0;
+}
+
+.main_container .tournaments .tournament .container .progress {
+  width: 320px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0 25px;
+}
+
+.main_container .tournaments .tournament .container .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+  padding-bottom: 20px;
+  margin-top: 5px;
+}
+
+.main_container .tournaments .tournament .container .value span {
+  display: block;
+  color: #acacac;
+  font-family: "BPG Arial";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.main_container .tournaments .tournament .container .image_container {
+  max-height: 170px;
+  overflow: hidden;
+}
+
+.main_container .tournaments .tournament .container .image_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_container .tournaments .tournament .container .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main_container .tournaments .tournament .container .text_container .price {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  background-color: #25313b;
+  position: absolute;
+  top: -20px;
+  left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 23px 10px 13px;
+}
+
+.main_container .tournaments .tournament .container .text_container .price img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 12px;
+  height: 14px;
+}
+
+.main_container .tournaments .tournament .container .text_container .price span {
+  display: block;
+  color: #ffffff;
+  font-family: "BPG Arial";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-left: 5px;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name .logo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 44px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name .logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name .name h4 {
+  color: #ffffff;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.main_container .tournaments .tournament .container .text_container .logo_name .name span {
+  display: block;
+  color: #acacac;
+  font-family: "BPG Arial";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
